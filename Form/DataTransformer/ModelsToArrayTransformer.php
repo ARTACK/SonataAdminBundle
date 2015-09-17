@@ -35,7 +35,7 @@ class ModelsToArrayTransformer implements DataTransformerInterface
         } elseif ($choiceList instanceof ModelChoiceList) {
             $this->choiceList = $choiceList;
         } else {
-            new \InvalidArgumentException('Argument 1 passed to '.__CLASS__.'::'.__METHOD__.' must be an instance of Sonata\AdminBundle\Form\ChoiceList\ModelChoiceList, instance of '.get_class($choiceList).' given')
+            new \InvalidArgumentException('Argument 1 passed to '.__CLASS__.'::'.__METHOD__.' must be an instance of Sonata\AdminBundle\Form\ChoiceList\ModelChoiceList, instance of '.get_class($choiceList).' given');
         }
     }
 
